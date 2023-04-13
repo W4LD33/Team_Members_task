@@ -27,7 +27,6 @@ export const GlobalProvider = ({ children }) => {
         payload: res.data
       });
     } catch (err) {
-      console.log('Error adding department:', err.response.data.msg)
       dispatch({
         type: 'DEPARTMENT_ERROR',
         payload: err.response.data.error

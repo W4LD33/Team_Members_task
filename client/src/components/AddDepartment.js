@@ -15,7 +15,7 @@ const AddDepartment = () => {
 
     const response = await addDepartment(newDepartment);
     setDepartmentName('');
-    await getDepartments(response.data.id);
+    await getDepartments();
   };
 
   return (

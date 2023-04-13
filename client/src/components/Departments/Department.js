@@ -8,6 +8,7 @@ const Department = () => {
       {departments.map(department => (
         <li key={department.id}>
           {department.Dept_name}
+          {console.log(department.id)}
           <button onClick={() => deleteDepartment(department.id)}>Delete</button>
         </li>
       ))}
